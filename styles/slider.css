@@ -1,0 +1,138 @@
+.slider {
+    position: relative;
+    user-select: none;
+
+    /* margin: 0 auto; */
+}
+
+.slider__inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.slider__item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+
+    overflow: hidden;
+    transform: translateX(-100%);
+}
+
+.slider__item.current {
+    z-index: 2;
+    transition: transform .3s ease;
+}
+
+.slider__item.active {
+    transform: translateX(0%);
+}
+
+.slider__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.slider__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    padding: 0 40px;
+    z-index: 2;
+}
+
+.slider__content *:last-child {
+    margin-bottom: 0;
+}
+
+.slider__title {
+    font-size: 40px;
+    color: #212121;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.slider__text {
+    font-size: 15px;
+    color: #212121;
+}
+
+/* SLIDER BUTTONS */
+.slider__btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    fill: #fff;
+    z-index: 10;
+
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+
+    transition: .1s linear;
+}
+
+.slider__btn:hover {
+    transform: scale(1.05);
+}
+
+#slider__prev-btn {
+    left: 20px;
+}
+
+#slider__next-btn {
+    right: 20px;
+}
+
+.slider__btn:hover {
+    transform: translateY(-50%) scale(1.05);
+}
+
+/* SLIDER INDICATORS */
+.slider__indicators {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 50px;
+    transform: translateX(-50%);
+    left: 50%;
+
+    z-index: 10;
+}
+
+.indicators__item {
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    margin: 0 5px;
+
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: .1s linear;
+}
+
+.indicators__item.active {
+    width: 30px;
+}

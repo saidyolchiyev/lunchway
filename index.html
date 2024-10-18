@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunchWay</title>
+
+    <!-- INDEX CSS FILE -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/40afee48f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="intro" id="intro">
+            <div class="container">
+                <div class="intro__title">Online Restoran</div>
+                <div class="intro__subtitle">Restoranımızın yeməklərini seçin və sifariş edin</div>
+                <div class="intro__phone">
+                    <i class="fas fa-phone"></i>
+                    <span>: +994 (50) 6000 567</span>
+                </div>
+            </div><!-- /.container -->
+        </section><!-- /.intro -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo logo-header">
+                        <img src="./images/logo/logo.png" alt="">
+                    </div>
+                    <div class="nav">
+                        <div class="nav__item"><a href="#intro" class="nav__link">Əsas</a></div>
+                        <div class="nav__item"><a href="#about" class="nav__link">Haqqımızda</a></div>
+                        <div class="nav__item"><a href="#menu" class="nav__link">Menyu</a></div>
+                        <div class="nav__item"><a href="#team" class="nav__link">Komandamız</a></div>
+                        <div class="nav__item"><a href="#contact" class="nav__link">Əlaqə</a></div>
+                        <div class="nav__item">
+                            <div class="dropdown nav__dropdown">
+                                <div class="dropdown__btn">
+                                    <span>Əməkdaşlarımız</span>
+                                    <i class="dropdown__icon fas fa-caret-down"></i>
+                                </div>
+                                <div class="dropdown__menu">
+                                    <a href="#" class="dropdown__item">Developia Engerening</a>
+                                    <a href="#" class="dropdown__item">Google</a>
+                                    <a href="#" class="dropdown__item">Oracle</a>
+                                    <a href="#" class="dropdown__item">Microsoft</a>
+                                    <a href="#" class="dropdown__item">Apple</a>
+                                    <a href="#" class="dropdown__item">Facebook</a>
+                                    <a href="#" class="dropdown__item">Amazon</a>
+                                    <a href="#" class="dropdown__item">Intel</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav__item">
+                            <a href="#subscribe" class="btn btn--subsribe">Abunə Ol</a>
+                        </div>
+                    </div>
+                    <div class="burger">
+                        <div class="burger__item"></div>
+                    </div>
+                </div><!-- /.header__inner -->
+            </div><!-- /.container -->
+        </header><!-- /.header -->
+        <main>
+            <!-- PAGE CONTENT -->
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 about__content">
+                            <div class="title about__title">Haqqımızda</div>
+                            <div class="text about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint esse possimus, harum natus velit fuga nulla? Qui libero voluptatem magnam placeat provident dolores deserunt laudantium perspiciatis, tempore cupiditate commodi quod illo sint odit omnis quae vel doloremque exercitationem laborum suscipit sit culpa obcaecati. Quam rerum optio tenetur itaque! Omnis dolore animi illum dolores recusandae facilis iure consequatur voluptatum repudiandae molestiae nostrum eum aut provident deleniti sequi eveniet, sit blanditiis quam dolorum cupiditate quidem! Nostrum doloribus molestias eligendi incidunt mollitia atque, numquam autem necessitatibus quaerat. Necessitatibus ea eius nostrum nesciunt quisquam doloribus, corporis possimus ut minima, odit iste exercitationem, amet ratione!</div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./images/slider/slider-3.jpg" alt="" class="about__img">
+                        </div>
+                    </div>
+                </div><!-- /.container -->
+            </section><!-- /.about -->
+            <section class="menu-slider">
+                <div class="container">
+                    <div class="title menu-slider__title">Menyu</div>
+                    <div class="slider" id="menu-slider">
+                        <div class="slider__inner">
+                            <div class="slider__item active">
+                                <img class="slider__img" src="./images/slider/slider-1.jpg" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__img" src="./images/slider/slider-2.jpg" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__img" src="./images/slider/slider-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <svg class="slider__btn" id="slider__prev-btn">
+                            <use xlink:href="#left-arrow"></use>
+                        </svg>
+                        <svg class="slider__btn" id="slider__next-btn">
+                            <use xlink:href="#right-arrow"></use>
+                        </svg>
+
+                        <div class="slider__indicators indicators"></div>
+                    </div>
+                </div><!-- /.container -->
+            </section><!--/.menu-slider-->
+            <section class="menu" id="menu">
+                <div class="container menu__container">
+                    <div class="title menu__title">Bizim Menyudan</div>
+                    <div class="row">
+                        <div class="col-md-6 item-menu">
+                            <div class="item-menu__img">
+                                <img src="./images/menu/menu-1.jpg" alt="">
+                            </div>
+                            <div class="menu-item__content">
+                                <div class="item-menu__title">LW Burger</div>
+                                <div class="item-menu__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nostrum.</div>
+                                <div class="item-menu__price">5.90 AZN</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 item-menu">
+                            <div class="item-menu__img">
+                                <img src="./images/menu/menu-6.jpg" alt="">
+                            </div>
+                            <div class="menu-item__content">
+                                <div class="item-menu__title">Düşbərə</div>
+                                <div class="item-menu__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nostrum.</div>
+                                <div class="item-menu__price">5.90 AZN</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 item-menu">
+                            <div class="item-menu__img">
+                                <img src="./images/menu/menu-2.jpg" alt="">
+                            </div>
+                            <div class="menu-item__content">
+                                <div class="item-menu__title">Spagetti Bolognese</div>
+                                <div class="item-menu__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nostrum.</div>
+                                <div class="item-menu__price">6.90 AZN</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 item-menu">
+                            <div class="item-menu__img">
+                                <img src="./images/menu/menu-7.jpg" alt="">
+                            </div>
+                            <div class="menu-item__content">
+                                <div class="item-menu__title">Göbələk Şorbası</div>
+                                <div class="item-menu__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nostrum.</div>
+                                <div class="item-menu__price">7.50 AZN</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="menu.html" class="btn menu__btn">Hamısına bax</a>
+                </div><!-- /.container -->
+            </section><!-- /.menu -->
+            <section class="team" id="team">
+                <div class="container">
+                    <div class="title team__title">Komandamız</div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+                            <div class="item-team__card card-team">
+                                <img src="./images/team/team-1.jpg" alt="" class="card-team__img">
+                                <div class="card-team__content">
+                                    <div class="card-team__title">Yusif</div>
+                                    <div class="card-team__text">Java Developer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+                            <div class="item-team__card card-team">
+                                <img src="./images/team/team-2.jpg" alt="" class="card-team__img">
+                                <div class="card-team__content">
+                                    <div class="card-team__title">Sərxan</div>
+                                    <div class="card-team__text">Java Developer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+                            <div class="item-team__card card-team">
+                                <img src="./images/team/team-3.jpg" alt="" class="card-team__img">
+                                <div class="card-team__content">
+                                    <div class="card-team__title">Samir</div>
+                                    <div class="card-team__text">Java Developer</div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+                            <div class="item-team__card card-team">
+                                <img src="./images/team/team-4.jpg" alt="" class="card-team__img">
+                                <div class="card-team__content">
+                                    <div class="card-team__title">Aleksandr</div>
+                                    <div class="card-team__text">Java Developer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.container -->
+            </section><!-- /.team -->
+            <section class="subscribe" id="subscribe">
+                <div class="container">
+                    <div class="title subscribe__title">Abunə Ol</div>
+                    <div class="subscribe__block">
+                        <input type="text" class="subscribe__input" placeholder="Email adresinizi yazın">
+                        <a href="#none" class="btn subscribe__btn">Abunə ol</a>
+                    </div>
+                </div><!-- /.container -->
+            </section><!-- /.subcribe -->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="title contact__title">Bizimlə Əlaqə Saxlayın</div>
+                    <div class="contact__inner">
+                        <div class="contact__form form-contact">
+                            <div class="form-contact__title">Məktub Göndərin</div>
+                            <div class="form-contact__input-box">
+                                <input type="text" id="name-in" placeholder="Adınızı daxil edin">
+                            </div>
+                            <div class="form-contact__input-box">
+                                <input type="text" id="email-in" placeholder="Email adresinizi yazın">
+                            </div>
+                            <div class="form-contact__input-box">
+                                <textarea name="" id="message-in" placeholder="Məktub yazın"></textarea>
+                            </div>
+                            <div class="form-contact__check-box">
+                                <input id="agree-check" type="checkbox">
+                                <label for="agree-check">Raziyam</label>
+                            </div>
+                            <button class="btn">Göndər</button>
+                        </div>
+                    </div>
+                </div><!-- /.container -->
+            </section><!-- /.contact -->
+        </main><!-- /main -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer__inner">
+                    <div class="col-lg-3 col-md-6 footer__block">
+                        <div class="footer__title">Bizimlə əlaqə</div>
+                        <div class="footer__contact">
+                            <div>Yusif Vəzir Çəmənzəmilli, Nərimanov Ray. Bakı</div>
+                            <div>+994 (50) 6000 567</div>
+                            <div>Bazarertəsi - Şənbə : 09:00 - 18:00</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__block">
+                        <div class="footer__title">Məlumat</div>
+                        <ul class="footer__list">
+                            <li><a href="" class="footer__link">Istifadə Qaydaları</a></li>
+                            <li><a href="" class="footer__link">Xəbərlər</a></li>
+                            <li><a href="" class="footer__link">Hüquqlar</a></li>
+                            <li><a href="" class="footer__link">Kömək</a></li>
+                            <li><a href="" class="footer__link">Bizimlə inkişaf edin</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__block">
+                        <div class="footer__title">Kateqoriyalar</div>
+                        <ul class="footer__list">
+                            <li><a href="" class="footer__link">Ərzaq</a></li>
+                            <li><a href="" class="footer__link">Restoran</a></li>
+                            <li><a href="" class="footer__link">Desertlər</a></li>
+                            <li><a href="" class="footer__link">Reseptlər</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__block">
+                        <div class="footer__title">Sualınız var?</div>
+                        <ul class="footer__list">
+                            <li><a href="" class="footer__link">info@lunchway.az</a></li>
+                        </ul>
+                    </div>
+                </div><!-- /.footer__inner -->
+            </div><!-- /.container -->
+            <div class="copyright">
+                <div class="copyright__text">
+                    <div>Copyright © 2021. All Rights reserved.</div>
+                    <div>Made with<span> ❤ by Said</span></div>
+                </div>
+            </div><!-- /.copyright -->
+        </footer><!-- /.footer -->
+    </div>
+
+    <!-- SPRITES -->
+    <svg style="display: none;">
+        <symbol id="left-arrow" viewBox="0 0 492 492">
+            <g>
+                <path d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12
+                    C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084
+                    c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864
+                    l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"/>
+            </g>
+        </symbol>
+        <symbol id="right-arrow" viewBox="0 0 492.004 492.004">
+            <g>
+                <path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+                    c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+                    c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+                    c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <!-- SCRIPT FILE -->
+    <script src="./scripts/script.js"></script>
+
+    <!-- SLIDER -->
+    <script src="./scripts/slider.js"></script>
+</body>
+</html>
